@@ -24,18 +24,19 @@ against the original source (October 2026); the quotes are copied from there.
 
 ## Languages
 
+- **English** (`en`): [Wiktionary, English edition (en.wiktionary.org)](#wiktionary-en), [kaikki.org machine-readable Wiktionary data (wiktextract)](#kaikki-wiktextract), [Wiktionary, Russian edition (ru.wiktionary.org)](#wiktionary-ru), [FrequencyWords: English word frequencies from OpenSubtitles 2018 (Hermit Dave)](#frequencywords-en), [OpenSubtitles 2018 corpus (OPUS)](#opensubtitles-2018), [Universal Dependencies English Web Treebank (UD_English-EWT)](#ud-english-ewt)
 - **Polski** (`pl`): [Wiktionary, Polish edition (pl.wiktionary.org)](#wiktionary-pl), [kaikki.org machine-readable Wiktionary data (wiktextract)](#kaikki-wiktextract), [Wiktionary, Russian edition (ru.wiktionary.org)](#wiktionary-ru), [Wiktionary, English edition (en.wiktionary.org)](#wiktionary-en), [FrequencyWords: Polish word frequencies from OpenSubtitles 2018 (Hermit Dave)](#frequencywords-pl), [OpenSubtitles 2018 corpus (OPUS)](#opensubtitles-2018), [KWJP100 lemma frequency list (Institute of Computer Science, Polish Academy of Sciences)](#kwjp100-pl)
 
 ## Sources
 
-### <a id="wiktionary-pl"></a>Wiktionary, Polish edition (pl.wiktionary.org)
+### <a id="wiktionary-en"></a>Wiktionary, English edition (en.wiktionary.org)
 
-- Source: https://pl.wiktionary.org/
-- Data used: https://kaikki.org/dictionary/downloads/pl/pl-extract.jsonl.gz
+- Source: https://en.wiktionary.org/
+- Data used: https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Terms: Wikimedia Terms of Use, section 7: text is available under CC BY-SA 4.0 and GFDL (reusers may comply with either). Attribute by hyperlink or URL to the reused pages, indicate modifications, include a license notice; modified text must stay under CC BY-SA 4.0 or later. ([source](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use))
-- Attribution: Wiktionary contributors, https://pl.wiktionary.org/ (CC BY-SA 4.0). Modified: extracted, filtered and restructured.
-- Notes: Share-alike applies to the pack files (adapted material), not to the app's code. Packs are therefore separate, DRM-free downloads under CC BY-SA 4.0. The name "Wiktionary" is a Wikimedia trademark: use it only as plain text to describe the source (Trademark Policy 3.6), no logos.
+- Attribution: Wiktionary contributors, https://en.wiktionary.org/ (CC BY-SA 4.0). Modified: extracted, filtered and restructured.
+- Notes: The primary edition for English. For other learned languages a supplement (English glosses) and the fallback for entries their edition lacks. The dump holds all languages (about 3 GB gzip); the builder streams it.
 - Compatible with a closed-source free app: yes
 
 ### <a id="kaikki-wiktextract"></a>kaikki.org machine-readable Wiktionary data (wiktextract)
@@ -53,29 +54,19 @@ against the original source (October 2026); the quotes are copied from there.
 - Source: https://ru.wiktionary.org/
 - Data used: https://kaikki.org/dictionary/downloads/ru/ru-extract.jsonl.gz
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- Terms: Wikimedia Terms of Use, section 7 (as for the Polish edition). ([source](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use))
+- Terms: Wikimedia Terms of Use, section 7: text is available under CC BY-SA 4.0 and GFDL (reusers may comply with either). Attribute by hyperlink or URL to the reused pages, indicate modifications, include a license notice; modified text must stay under CC BY-SA 4.0 or later. ([source](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use))
 - Attribution: Wiktionary contributors, https://ru.wiktionary.org/ (CC BY-SA 4.0). Modified: extracted, filtered and restructured.
 - Notes: Used as a supplement: Russian glosses of Polish entries.
 - Compatible with a closed-source free app: yes
 
-### <a id="wiktionary-en"></a>Wiktionary, English edition (en.wiktionary.org)
-
-- Source: https://en.wiktionary.org/
-- Data used: https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
-- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- Terms: Wikimedia Terms of Use, section 7 (as for the Polish edition). ([source](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use))
-- Attribution: Wiktionary contributors, https://en.wiktionary.org/ (CC BY-SA 4.0). Modified: extracted, filtered and restructured.
-- Notes: Used as a supplement (English glosses) and as the fallback for entries the learned language's edition lacks. The dump holds all languages (about 3 GB gzip); the builder streams it.
-- Compatible with a closed-source free app: yes
-
-### <a id="frequencywords-pl"></a>FrequencyWords: Polish word frequencies from OpenSubtitles 2018 (Hermit Dave)
+### <a id="frequencywords-en"></a>FrequencyWords: English word frequencies from OpenSubtitles 2018 (Hermit Dave)
 
 - Source: https://github.com/hermitdave/FrequencyWords
-- Data used: https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/pl/pl_full.txt
+- Data used: https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/en/en_full.txt
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 - Terms: README: "MIT License for code. CC-by-sa-4.0 for content." The repository's LICENSE file is MIT. The stricter CC BY-SA 4.0 is assumed for the word lists. ([source](https://github.com/hermitdave/FrequencyWords))
 - Attribution: FrequencyWords by Hermit Dave, https://github.com/hermitdave/FrequencyWords (CC BY-SA 4.0), built from the OpenSubtitles corpus, http://www.opensubtitles.org/
-- Notes: Word forms, not lemmas; subtitle noise (names, English words, credits). Only derived ranks and form-to-lemma links go into packs. Pinned to commit 525f9b5 (2022-02-07).
+- Notes: Word forms, not lemmas; contractions are split ("don", "'t"). Only derived ranks and form-to-lemma links go into packs. Pinned to commit 525f9b5 (2022-02-07).
 - Compatible with a closed-source free app: yes
 
 ### <a id="opensubtitles-2018"></a>OpenSubtitles 2018 corpus (OPUS)
@@ -86,6 +77,37 @@ against the original source (October 2026); the quotes are copied from there.
 - Attribution: OpenSubtitles corpus, http://www.opensubtitles.org/ (via OPUS)
 - Citation: P. Lison and J. Tiedemann, 2016, OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and TV Subtitles. In Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016).
 - Notes: Packs contain no subtitle text, only ranks derived from word counts. The link and citation requested by OPUS are given in DATA_LICENSES.md and in the manifest.
+- Compatible with a closed-source free app: yes
+
+### <a id="ud-english-ewt"></a>Universal Dependencies English Web Treebank (UD_English-EWT)
+
+- Source: https://github.com/UniversalDependencies/UD_English-EWT
+- Data used: https://raw.githubusercontent.com/UniversalDependencies/UD_English-EWT/4a4d77f599ea53cc405f85d0cec4b2f14f81d42b/en_ewt-ud-train.conllu
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Terms: README: "The annotations and database rights of the Universal Dependencies English Web Treebank are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License." The underlying texts come from the LDC English Web Treebank (parts public domain, portions (c) Google, Yahoo!, University of Pennsylvania and others). The README asks users to cite the paper above. ([source](https://github.com/UniversalDependencies/UD_English-EWT/blob/master/README.md))
+- Attribution: Universal Dependencies English Web Treebank, https://github.com/UniversalDependencies/UD_English-EWT (CC BY-SA 4.0), annotations by The Board of Trustees of The Leland Stanford Junior University
+- Citation: Natalia Silveira, Timothy Dozat, Marie-Catherine de Marneffe, Samuel Bowman, Miriam Connor, John Bauer and Christopher D. Manning: A Gold Standard Dependency Corpus for English. Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC-2014).
+- Notes: Training file only (about 80% of the corpus's 254,820 words). Used as a part-of-speech prior: counts of (lemma, UPOS); packs contain no corpus text. Pinned to commit 4a4d77f (2026-05-06).
+- Compatible with a closed-source free app: yes
+
+### <a id="wiktionary-pl"></a>Wiktionary, Polish edition (pl.wiktionary.org)
+
+- Source: https://pl.wiktionary.org/
+- Data used: https://kaikki.org/dictionary/downloads/pl/pl-extract.jsonl.gz
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Terms: Wikimedia Terms of Use, section 7: text is available under CC BY-SA 4.0 and GFDL (reusers may comply with either). Attribute by hyperlink or URL to the reused pages, indicate modifications, include a license notice; modified text must stay under CC BY-SA 4.0 or later. ([source](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use))
+- Attribution: Wiktionary contributors, https://pl.wiktionary.org/ (CC BY-SA 4.0). Modified: extracted, filtered and restructured.
+- Notes: Share-alike applies to the pack files (adapted material), not to the app's code. Packs are therefore separate, DRM-free downloads under CC BY-SA 4.0. The name "Wiktionary" is a Wikimedia trademark: use it only as plain text to describe the source (Trademark Policy 3.6), no logos.
+- Compatible with a closed-source free app: yes
+
+### <a id="frequencywords-pl"></a>FrequencyWords: Polish word frequencies from OpenSubtitles 2018 (Hermit Dave)
+
+- Source: https://github.com/hermitdave/FrequencyWords
+- Data used: https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/pl/pl_full.txt
+- License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Terms: README: "MIT License for code. CC-by-sa-4.0 for content." The repository's LICENSE file is MIT. The stricter CC BY-SA 4.0 is assumed for the word lists. ([source](https://github.com/hermitdave/FrequencyWords))
+- Attribution: FrequencyWords by Hermit Dave, https://github.com/hermitdave/FrequencyWords (CC BY-SA 4.0), built from the OpenSubtitles corpus, http://www.opensubtitles.org/
+- Notes: Word forms, not lemmas; subtitle noise (names, English words, credits). Only derived ranks and form-to-lemma links go into packs. Pinned to commit 525f9b5 (2022-02-07).
 - Compatible with a closed-source free app: yes
 
 ### <a id="kwjp100-pl"></a>KWJP100 lemma frequency list (Institute of Computer Science, Polish Academy of Sciences)
